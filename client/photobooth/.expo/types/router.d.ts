@@ -1,0 +1,14 @@
+/* eslint-disable */
+import * as Router from 'expo-router';
+
+export * from 'expo-router';
+
+declare module 'expo-router' {
+  export namespace ExpoRouter {
+    export interface __routes<T extends string | object = string> {
+      hrefInputParams: { pathname: Router.RelativePathString, params?: Router.UnknownInputParams } | { pathname: Router.ExternalPathString, params?: Router.UnknownInputParams } | { pathname: `/`; params?: Router.UnknownInputParams; } | { pathname: `/_sitemap`; params?: Router.UnknownInputParams; } | { pathname: `/Components/AppNavigation`; params?: Router.UnknownInputParams; } | { pathname: `/Components/CameraScreen`; params?: Router.UnknownInputParams; } | { pathname: `/Components/FrameSelectionScreen`; params?: Router.UnknownInputParams; } | { pathname: `/Components/PreviewScreen`; params?: Router.UnknownInputParams; } | { pathname: `/Components/ThankyouScreen`; params?: Router.UnknownInputParams; };
+      hrefOutputParams: { pathname: Router.RelativePathString, params?: Router.UnknownOutputParams } | { pathname: Router.ExternalPathString, params?: Router.UnknownOutputParams } | { pathname: `/`; params?: Router.UnknownOutputParams; } | { pathname: `/_sitemap`; params?: Router.UnknownOutputParams; } | { pathname: `/Components/AppNavigation`; params?: Router.UnknownOutputParams; } | { pathname: `/Components/CameraScreen`; params?: Router.UnknownOutputParams; } | { pathname: `/Components/FrameSelectionScreen`; params?: Router.UnknownOutputParams; } | { pathname: `/Components/PreviewScreen`; params?: Router.UnknownOutputParams; } | { pathname: `/Components/ThankyouScreen`; params?: Router.UnknownOutputParams; };
+      href: Router.RelativePathString | Router.ExternalPathString | `/${`?${string}` | `#${string}` | ''}` | `/_sitemap${`?${string}` | `#${string}` | ''}` | `/Components/AppNavigation${`?${string}` | `#${string}` | ''}` | `/Components/CameraScreen${`?${string}` | `#${string}` | ''}` | `/Components/FrameSelectionScreen${`?${string}` | `#${string}` | ''}` | `/Components/PreviewScreen${`?${string}` | `#${string}` | ''}` | `/Components/ThankyouScreen${`?${string}` | `#${string}` | ''}` | { pathname: Router.RelativePathString, params?: Router.UnknownInputParams } | { pathname: Router.ExternalPathString, params?: Router.UnknownInputParams } | { pathname: `/`; params?: Router.UnknownInputParams; } | { pathname: `/_sitemap`; params?: Router.UnknownInputParams; } | { pathname: `/Components/AppNavigation`; params?: Router.UnknownInputParams; } | { pathname: `/Components/CameraScreen`; params?: Router.UnknownInputParams; } | { pathname: `/Components/FrameSelectionScreen`; params?: Router.UnknownInputParams; } | { pathname: `/Components/PreviewScreen`; params?: Router.UnknownInputParams; } | { pathname: `/Components/ThankyouScreen`; params?: Router.UnknownInputParams; };
+    }
+  }
+}
